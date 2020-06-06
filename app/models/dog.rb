@@ -7,7 +7,8 @@ class Dog < Sinatra::Base
   def initialize(name, breed, age)
     @name = name,
     @breed = breed,
-    @age = age
+    @age = age,
+    @@dog << self
   end
     
   
